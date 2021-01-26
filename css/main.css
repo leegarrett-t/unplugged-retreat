@@ -97,8 +97,7 @@ body {
 
 
 header,
-footer,
-main {
+footer{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,6 +180,8 @@ footer .copyright {
   margin: 20px 0;
   text-align: center;
 }
+
+/* ---------- Home PAge - Newsletter ----------*/
 
 
 /* ---------- Home Page - Info Section ---------- */
@@ -285,125 +286,136 @@ footer .copyright {
 
 @media only screen and (min-width: 768px) {
 /* Tablet Styles */
+  .wrapper {
+    width: 85%;
+  }
+  main .wrapper {
+    width: 85%;
+  }
+  header .wrapper {
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+  header nav ul {
+  }
+  .info .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .info-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    width:80%;
 
-.wrapper {
-  width: 85%;
-}
-main .wrapper {
-  width: 85%;
-}
-header .wrapper {
-  justify-content: space-between;
-  flex-flow: row nowrap;
-}
-header nav ul {
-}
-.info .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-.info-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: row wrap;
-  width:80%;
-
-}
-.info article {
-  flex-basis: 40%;
-}
-.reviews .wrapper {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 100%;
-}
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  }
+  .info h3 {
+    width: 100%;
+  }
+  .info article {
+    flex-basis: 40%;
+  }
+  .reviews .wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .reviews h2 {
+    width: 100%;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 /***** About Page *****/
-.mission .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
+  .mission .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .mission h2 {
+    width: 100%;
+  }
 
-.mission-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-flow: row nowrap;
-}
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+  }
 
-.mission-content p {
-  width: 47%;
-}
+  .mission-content p {
+    width: 47%;
+  }
 
-.contact-info{
-  width: 100%;
-}
+  .contact-info{
+    width: 100%;
+  }
 
-.contact-info .wrapper h2 {
-  width: 80%;
-}
-.contact-info .wrapper{
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  flex-flow: row wrap;
-}
-.contact-content {
-  width: 50%;
-}
+  .contact-info .wrapper h2 {
+    width: 80%;
+  }
+  .contact-info .wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-flow: row wrap;
+  }
+  .contact-content {
+    width: 50%;
+  }
+  /***** FAQ Page *****/
+  .faq .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+  }
 
+  .faq-content {
+    flex-basis: 40%;
+  }
 
-
-
-/***** FAQ Page *****/
-    .faq .wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-flow: row wrap;
-    }
-
-    .faq-content {
-      flex-basis: 40%;
-    }
-
-    .faq h2 {
-      width: 100%;
-    }
-
+  .faq h2 {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   /* Desktop Styles */
-.wrapper {
-  width: 80%;
-}
-main .wrapper {
-  width: 80%;
-}
-.info-content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
-  width:80%;
-}
-.info article {
-  width: 30%;
-}
-
-
+  .wrapper {
+    width: 80%;
+  }
+  main .wrapper {
+    width: 80%;
+  }
+  .banner h2 {
+    width: 75%;
+  }
+  .info-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    width:80%;
+  }
+  .info article {
+    flex-basis: 30%;
+  }
+  .newsletter .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .newsletter-content {
+    width: 30%;
+  }
 }
 
 
