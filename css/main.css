@@ -113,6 +113,8 @@ textarea {
    font-family: "Poppins", sans-serif;
    font-size: 2.5em;
    font-weight: 500;
+   padding: 0;
+   margin: 0;
  }
 
  h3,
@@ -120,6 +122,8 @@ textarea {
    font-family: "Poppins", sans-serif;
    font-size: 1.8em;
    font-weight: 500;
+   padding: 0;
+   margin: 0;
 
  }
 
@@ -219,16 +223,22 @@ main .wrapper {
 /* ---------- Social Footer Styles ----------*/
 footer {
   text-align: center;
-
 }
-
+footer h3 {
+  margin-bottom: 20px;
+}
 footer .wrapper {
   margin: 50px 0 10px 0;
+}
+footer .contact {
+  margin-bottom: 50px;
+
 }
 footer .social-icons{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 50px;
 }
 footer .social-icons p {
   display: flex;
@@ -317,7 +327,14 @@ input[type=button] {
   background-color: #2a423a;
   padding: 50px 0 45px 0;
 }
-/* ---------- About Page - Contact Info ----------*/
+/* ---------- About Page ----------*/
+.mission h2 {
+  margin: 50px 0 20px 0;
+  font-size: 1.9em;
+}
+.mission-content {
+  margin: 0 0 50px 0;
+}
 .map {
   width: 100%;
   height: 0;
@@ -335,6 +352,18 @@ input[type=button] {
 .contact-info {
   background-color: #2a423a;
 }
+.contact-info .wrapper {
+  padding: 50px 0;
+}
+.contact-info h2{
+  font-size: 1.9em;
+  margin-bottom: 15px;
+}
+.contact-info h4{
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
 
 
 /* ==========================================================================
@@ -573,8 +602,10 @@ input[type=button] {
   .mission-content p {
     width: 47%;
   }
-
-  .contact-info{
+  .map {
+    padding-bottom: 45%;
+  }
+  .contact-info {
     width: 100%;
   }
 
@@ -648,7 +679,11 @@ input[type=button] {
   .reviews article p {
     width: 75%;
   }
+  /***** ========== About Page DESKTOP ========== *****/
 
+  .map {
+    padding-bottom: 38%;
+  }
 
 }
 
