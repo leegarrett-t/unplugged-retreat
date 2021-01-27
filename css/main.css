@@ -93,6 +93,7 @@ textarea {
  }
 
  body {
+   background-color: #527158;
    font-family: "Open Sans", sans-serif;
    font-size: 1em;
    color: #e2e3ed;
@@ -111,12 +112,15 @@ textarea {
  h2 {
    font-family: "Poppins", sans-serif;
    font-size: 3.75em;
+   font-weight: 500;
  }
 
  h3,
  h4 {
    font-family: "Poppins", sans-serif;
    font-size: 1.8em;
+   font-weight: 500;
+
  }
 
  p {
@@ -142,10 +146,9 @@ textarea {
 }
 
 /* ---------- Base Header - Footer Styles ---------- */
-
-
 header,
 footer{
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,8 +229,32 @@ footer .copyright {
   text-align: center;
 }
 
-/* ---------- Home PAge - Newsletter ----------*/
+/* ---------- Home Page - Newsletter ----------*/
+aside .form {
+  margin-top: 30px;
+}
 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /* ---------- Home Page - Info Section ---------- */
 .info h3 {
@@ -239,7 +266,14 @@ footer .copyright {
   margin: auto;
   text-align: center;
 }
-
+/* ---------- Home Page - Reviews Section ----------*/
+.reviews {
+  background-color: #2a423a;
+}
+/* ---------- About Page - Contact Info ----------*/
+.contact-info {
+  background-color: #2a423a;
+}
 
 /* ==========================================================================
    Helper classes
@@ -369,7 +403,7 @@ footer .copyright {
     align-items: center;
     flex-flow: row wrap;
   }
-  .reviews h2 {
+  .reviews h3 {
     width: 100%;
   }
   .footer-content {
