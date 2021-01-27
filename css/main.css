@@ -111,7 +111,7 @@ textarea {
 
  h2 {
    font-family: "Poppins", sans-serif;
-   font-size: 3.75em;
+   font-size: 2.5em;
    font-weight: 500;
  }
 
@@ -124,15 +124,15 @@ textarea {
  }
 
  p {
-   line-height: 1.2em;
+   line-height: 1.4em;
  }
 
  img {
-
+   width: 100%;
  }
 
  figure {
-
+   margin: 0;
  }
 
  address {
@@ -166,7 +166,13 @@ header .wrapper {
   flex-flow: row wrap;
   margin: 0;
 }
-
+header figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 65%;
+}
 footer {
   flex-direction: column;
 }
@@ -187,14 +193,20 @@ header nav ul{
   width: 100%;
   display: flex;
   justify-content: space-around;
+  padding: 0 0 5px 0;
+  margin: 0;
+
 }
 header nav ul li {
   list-style: none;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .header-divider {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background-color: #3a3a3a;
 }
 
 /* ---------- Main Base Styles ---------- */
@@ -211,8 +223,7 @@ footer {
 }
 
 footer .wrapper {
-  width: 55%;
-  margin: 50px 0;
+  margin: 50px 0 10px 0;
 }
 footer .social-icons{
   display: flex;
@@ -225,11 +236,21 @@ footer .social-icons p {
   align-items: center;
 }
 footer .copyright {
-  margin: 20px 0;
+  margin: 50px 0 0 0;
   text-align: center;
 }
-
+/* ---------- Home Page - Banner ----------*/
+.banner {
+  background-image: url("../img/girl-on-bridge.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding: 2.8em 0 26em 0;
+}
 /* ---------- Home Page - Newsletter ----------*/
+.newsletter {
+  padding: 30px 0 55px;
+}
 aside .form {
   margin-top: 30px;
 }
@@ -257,8 +278,15 @@ input[type=button] {
 }
 
 /* ---------- Home Page - Info Section ---------- */
+.info {
+  background-image: url('../img/hiking-picnic.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 62px 0 58px 0;
+}
 .info h3 {
-  width: 80%;
+  width: 95%;
 
   }
 .info article {
@@ -269,6 +297,7 @@ input[type=button] {
 /* ---------- Home Page - Reviews Section ----------*/
 .reviews {
   background-color: #2a423a;
+  padding: 50px 0 45px 0;
 }
 /* ---------- About Page - Contact Info ----------*/
 .contact-info {
@@ -368,15 +397,74 @@ input[type=button] {
   .wrapper {
     width: 85%;
   }
+  h2 {
+    font-size: 4em;
+  }
+  h3 {
+    font-size: 2em;
+  }
   main .wrapper {
     width: 85%;
   }
+  /* ---------- Header TABLET +----------*/
   header .wrapper {
     justify-content: space-between;
     flex-flow: row nowrap;
   }
-  header nav ul {
+  header figure {
+    width: 35%;
   }
+  header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  header nav ul{
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+  }
+  header nav ul li{
+    padding: 2px 0 0 55px;
+    font-size: 1.2em;
+  }
+
+  .header-divider {
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+  /* ---------- Home Page - Banner TABLET +----------*/
+  .banner {
+    padding: 95px 0 420px 0;
+  }
+  /* ---------- Home Page - Newsletter TABLET +----------*/
+
+  .newsletter {
+    padding: 50px 0 70px;
+  }
+  .newsletter .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .newsletter-content {
+    width: 30%;
+  }
+
+  /* ---------- Home Page - Info TABLET +----------*/
+
+  .info {
+    padding: 100px 0 95px 0;
+  }
+
   .info .wrapper {
     display: flex;
     justify-content: center;
@@ -392,10 +480,14 @@ input[type=button] {
 
   }
   .info h3 {
-    width: 100%;
+    width: 90%;
   }
   .info article {
     flex-basis: 40%;
+  }
+  /* ---------- Home Page - Reviews TABLET + ----------*/
+  .reviews {
+    padding: 100px 0;
   }
   .reviews .wrapper {
     display: flex;
@@ -404,14 +496,44 @@ input[type=button] {
     flex-flow: row wrap;
   }
   .reviews h3 {
-    width: 100%;
+    width: 75%;
+    font-size: 3em;
+    margin: 0 0 25px 0;
+  }
+  .reviews figure {
+    width: 48%;
+  }
+  .reviews article {
+    width: 48%;
+  }
+
+  .reviews-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+  }
+  .reviews h4 {
+    padding: 0;
+    margin: 0;
+  }
+  /* ---------- Footer TABLET + ----------*/
+  footer .wrapper {
+    margin-top: 100px;
   }
   .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
-/***** About Page *****/
+  footer h3 {
+    margin: 0;
+    padding: 0 0 40px 0;
+  }
+  .copyright {
+    padding: 100px 0 0 0;
+  }
+/***** ========== About Page TABLET + ========== *****/
   .mission .wrapper {
     display: flex;
     justify-content: center;
@@ -449,7 +571,7 @@ input[type=button] {
   .contact-content {
     width: 50%;
   }
-  /***** FAQ Page *****/
+  /***** ========== FAQ Page TABLET + ========== *****/
   .faq .wrapper {
     display: flex;
     justify-content: space-between;
@@ -474,9 +596,16 @@ input[type=button] {
   main .wrapper {
     width: 80%;
   }
+  h3 {
+    font-size: 2.25em;
+  }
+  p {
+    font-size: 1.2em;
+  }
   .banner h2 {
     width: 75%;
   }
+
   .info-content {
     display: flex;
     justify-content: space-around;
@@ -484,17 +613,24 @@ input[type=button] {
     flex-flow: row wrap;
     width:80%;
   }
+  .info h3 {
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 80%;
+    text-align: left;
+  }
+
   .info article {
     flex-basis: 30%;
   }
-  .newsletter .wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+  .reviews h3 {
+    margin: 0 0 100px 0;
   }
-  .newsletter-content {
-    width: 30%;
+  .reviews article p {
+    width: 75%;
   }
+
+
 }
 
 
