@@ -86,8 +86,56 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body {
-}
+ /* General Styles */
+
+ html {
+   font-size: 16px;
+ }
+
+ body {
+   font-family: "Open Sans", sans-serif;
+   font-size: 1em;
+   color: #e2e3ed;
+ }
+
+ ul,
+ ol {
+
+ }
+
+ a {
+   text-decoration: none;
+   color: #e2e3ed;
+ }
+
+ h2 {
+   font-family: "Poppins", sans-serif;
+   font-size: 3.75em;
+ }
+
+ h3,
+ h4 {
+   font-family: "Poppins", sans-serif;
+   font-size: 1.8em;
+ }
+
+ p {
+   line-height: 1.2em;
+ }
+
+ img {
+
+ }
+
+ figure {
+
+ }
+
+ address {
+   font-style: normal;
+ }
+
+/* ----- Wrapper ----- */
 .wrapper {
   width: 90%;
   margin: 50px 0;
@@ -121,9 +169,6 @@ footer {
 }
 footer p {
   margin: 0;
-}
-a {
-  text-decoration: none;
 }
 
 /* ---------- Nav Styles ----------*/
