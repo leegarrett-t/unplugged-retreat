@@ -216,7 +216,6 @@ header nav ul li {
 main .wrapper {
   width: 90%;
   margin: 0 auto;
-
 }
 
 /* ---------- Social Footer Styles ----------*/
@@ -285,7 +284,7 @@ aside .form {
 input[type=text] {
   box-sizing: border-box;
   width: 100%;
-  color: #2a423a;
+  color: #9d9ea4;
   font-style: italic;
   padding: 1em;
 }
@@ -387,6 +386,34 @@ input[type=button] {
 .contact-info h4{
   font-size: 1.2em;
   margin-bottom: 15px;
+}
+/* ---------- FAQ Page ----------*/
+.faq  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq .wrapper {
+  width: 90%;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.faq h2{
+  font-size: 1.9em;
+  margin-bottom: 15px;
+  line-height:1em;
+}
+.faq h4{
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+.faq-content {
+  margin-top: 50px;
 }
 
 
@@ -672,6 +699,7 @@ input[type=button] {
 
   .faq h2 {
     width: 100%;
+    font-size: 3em;
   }
 }
 
